@@ -20,4 +20,21 @@ function startServer(){
     });
 }
 
+app.get('/api/index/:id', (req, res) => {
+    console.log("req: ", req)
+    return res.status(200).json({message: "success !"})
+})
+app.post('/api/create/:id', (req, res) => {
+    console.log("req: ", req)
+    return res.status(200).json({message: "success !"})
+})
+app.delete('/api/remove/:id', (req, res) => {
+    console.log("req: ", req)
+    return res.status(200).json({message: "success !"})
+})
+app.put('/api/update/:id', (req, res) => {
+    console.log("req: ", req)
+    return res.status(200).json({message: "success !"})
+})
+
 setImmediate(startServer);
